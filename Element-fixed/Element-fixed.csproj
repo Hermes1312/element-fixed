@@ -7,7 +7,7 @@
         <Nullable>enable</Nullable>
         <UseWindowsForms>true</UseWindowsForms>
         <ImplicitUsings>enable</ImplicitUsings>
-        <ApplicationIcon>Element_0000.ico</ApplicationIcon>
+        <ApplicationIcon>Element.ico</ApplicationIcon>
         <Company>Hermes</Company>
         <Product>Element (Fixed by Hermes)</Product>
         <AssemblyVersion>1.0</AssemblyVersion>
@@ -15,10 +15,6 @@
         <SignAssembly>true</SignAssembly>
         <AssemblyOriginatorKeyFile>element.snk</AssemblyOriginatorKeyFile>
     </PropertyGroup>
-
-    <ItemGroup>
-      <Content Include="Element_0000.ico" />
-    </ItemGroup>
 
     <ItemGroup>
       <PackageReference Include="CefSharp.WinForms.NETCore" Version="103.0.120" />

@@ -69,5 +69,25 @@ namespace Element_fixed.Properties {
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Icon podobny do zasobu (Ikona).
+        /// </summary>
+        internal static System.Drawing.Icon Element_message {
+            get {
+                object obj = ResourceManager.GetObject("Element_message", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Wyszukuje zlokalizowany zasób typu System.Drawing.Icon podobny do zasobu (Ikona).
+        /// </summary>
+        internal static System.Drawing.Icon Element_standard {
+            get {
+                object obj = ResourceManager.GetObject("Element_standard", resourceCulture);
+                return ((System.Drawing.Icon)(obj));
+            }
+        }
     }
 }

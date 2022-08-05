@@ -40,6 +40,21 @@ public partial class Form1 : Form
     {
         titleLabel.Invoke((MethodInvoker) (() => titleLabel.Text = e.Title));
         Invoke((MethodInvoker) (() => Text = e.Title));
+
+        if (e.Title.Contains('[') && e.Title.Contains(']'))
+        {
+            Invoke((MethodInvoker)(() => {
+                Icon = Properties.Resources.Element_message;
+                notifyIcon.Icon = Properties.Resources.Element_message;
+            }));
+        }
+        else
+        {
+            Invoke((MethodInvoker)(() => {
+                Icon = Properties.Resources.Element_standard;
+                notifyIcon.Icon = Properties.Resources.Element_standard;
+            }));
+        }
     }
 
     private void guna2ControlBox1_Click(object sender, EventArgs e)

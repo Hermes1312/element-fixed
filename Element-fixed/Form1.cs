@@ -42,13 +42,7 @@ public partial class Form1 : Form
         Invoke((MethodInvoker) (() => Text = e.Title));
     }
 
-    private void zamknijPizdeToolStripMenuItem_Click(object sender, EventArgs e) 
-        => Environment.Exit(1);
-
     private void guna2ControlBox1_Click(object sender, EventArgs e)
-        => ShowOrHide();
-
-    private void ShowHideItem_Click(object sender, EventArgs e) 
         => ShowOrHide();
 
     private void ShowOrHide()
@@ -63,5 +57,13 @@ public partial class Form1 : Form
             WindowState = FormWindowState.Normal;
             ShowInTaskbar = true;
         }
+
+        IsHidden = !IsHidden;
     }
+
+    private void toolStripMenuItem1_Click(object sender, EventArgs e)
+        => ShowOrHide();
+
+    private void toolStripMenuItem2_Click(object sender, EventArgs e)
+        => Environment.Exit(1);
 }

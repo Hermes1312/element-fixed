@@ -81,4 +81,10 @@ public partial class Form1 : Form
 
     private void toolStripMenuItem2_Click(object sender, EventArgs e)
         => Environment.Exit(1);
+
+    private void Form1_FormClosing(object sender, FormClosingEventArgs e)
+    {
+        e.Cancel = true;
+        ShowOrHide(); 
+    }
 }
